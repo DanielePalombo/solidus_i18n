@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'deface', '~> 1.0'
 
   s.add_development_dependency 'byebug'
-  s.add_development_dependency 'capybara', '~> 2.4.4'
+  s.add_development_dependency 'capybara', '~> 2.4'
   s.add_development_dependency 'database_cleaner', '~> 1.3'
   s.add_development_dependency 'factory_bot', '~> 4.5'
   s.add_development_dependency 'ffaker', '>= 1.25.0'
