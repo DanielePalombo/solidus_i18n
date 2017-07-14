@@ -1,0 +1,17 @@
+.locales-settings tbody {
+  tr {
+    .fa-check, .fa-cancel {
+      display: none !important;
+    }
+
+    &.editing {
+      .fa-check, .fa-cancel {
+        display: inline-block !important;
+      }
+
+      .fa {
+        display: none;
+      }
+    }
+  }
+}
