@@ -10,6 +10,10 @@ module SolidusI18n
           "//= require spree/frontend/solidus_i18n\n"
       end
 
+      def add_stylesheets
+        inject_into_file 'vendor/assets/stylesheets/spree/backend/all.css', " *= require spree/backend/solidus_i18n\n", before: %r(\*/), verbose: true
+      end
+
       def add_migrations
         run 'bin/rake solidus_i18n:install:migrations'
       end
