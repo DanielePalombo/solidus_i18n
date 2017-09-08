@@ -18,12 +18,6 @@ module SolidusI18n
       SolidusI18n::Locale.all.map { |locale| locale_presentation(locale) }.push(['English (EN)', :en])
     end
 
-    def available_locales_presentation(store)
-      store.preferred_available_locales.map do |locale|
-        Spree.t(:'i18n.this_file_language', locale: locale)
-      end.join(', ')
-    end
-
     private
 
     def locale_presentation(locale)
